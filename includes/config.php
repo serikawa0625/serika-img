@@ -5,10 +5,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 // 基础配置
-define('UPLOAD_DIR', '/home/ftp/c/cj1gxtdzl/tuchuang/uploads/');
-define('DATA_DIR', '/home/ftp/c/cj1gxtdzl/tuchuang/data/');
+define('UPLOAD_DIR', '/a/a/a/a/tuchuang/uploads/'); //填入自己的服务器路径
+define('DATA_DIR', '/a/a/a/a/tuchuang/data/'); //填入自己的服务器路径
 define('MAX_GUEST_UPLOAD', 10);
-define('AUTH_CODE', 'serikawa2025');
+define('AUTH_CODE', 'your keys'); //填入自己的注册密钥
 
 // 自动创建必要目录
 $dirs = [UPLOAD_DIR, DATA_DIR];
