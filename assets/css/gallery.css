@@ -1,0 +1,52 @@
+/* 图片详情特效 */
+.image-card {
+    position: relative;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-card:hover .delete-btn {
+    opacity: 1;
+}
+
+.image-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* 加载动画 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.image-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* 悬浮特效 */
+.thumbnail {
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
